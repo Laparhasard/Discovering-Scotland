@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" lang="fr" content="Marian Vigneron">
+  <meta name="copyright" content="© Marian Vigneron 2022">
+  <meta name="Description" lang="fr" content="Un site informatif sur l'Ecosse">
+  <meta name="Keywords" lang="fr" content="Ecosse, loch ness, voyage, paysage">
+  <link rel="stylesheet" href="../style/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="../loader/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Lato&family:wght@600&family=Quattrocento&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="conteneur_global">
+    <!----- Loader ------>
+
+    <div class="loader">
+      <img src="../loader/loader.gif" alt="Loading...">
+    </div>
+
+    <!----- Navigation ------>
+
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" style="padding-top: 2px; padding-bottom: 0px;"><img src="../img/logo2.png"
+          height="40px"></a>
+      <a href="galerie.html">Galerie</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tourisme
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="regions.html">Régions</a>
+          <a href="activites.html">Activités</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Description
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="faune_flore.html">La faune et la flore</a>
+          <a href="cuisine.html">Spécialités culinaires</a>
+          <a href="musique.html">La musique</a>
+        </div>
+      </div>
+      <a href="mythes.html">Mythes</a>
+      <a href="quizz.html">Quizz</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!----- Formulaire ----->
+
+    <div class="conteneur_flex_form">
+
+      <div class="conteneur_50_form">
+        <a href="mailto:emma.samuel@utt.fr"><img src="../img/emma.jpg" alt="Samuel Emma, cliente"></a>
+        <br>
+        Emma Samuel
+        <br>
+        Cliente
+      </div>
+
+      <div class="conteneur_50_form">
+        <a href="mailto:marian.vigneron@utt.fr"><img src="../img/marian.jpg" alt="Vigneron marian, chef de projet"></a>
+        <br>
+        Marian Vigneron
+        <br>
+        Chef de projet
+      </div>
+    </div>
+
+    <div class="conteneur_form">
+      <form action="mailto:marian.vigneron@free.fr" method="post">
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="Prenom" placeholder="Votre prénom..." required>
+
+        <label for="nom">Nom de famille</label>
+        <input type="text" id="nom" name="Nom" placeholder="Votre nom de famille" required>
+
+        <label for="mail">Adresse email</label>
+        <input type="email" id="mail" name="Email" placeholder="marian.vigneron@utt.fr" required>
+
+        <label for="poste">Vous êtes ?</label>
+        <select id="poste" name="Statut" required>
+          <option value="etudiant">Étudiant</option>
+          <option value="professionnel">Professionnel</option>
+          <option value="autre">Autre</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" placeholder="Votre message..." style="height:200px" required></textarea>
+
+        <div class="right">
+          <input classe="send_right" type="submit" value="Envoyer">
+        </div>
+      </form>
+    </div>
+
+    <!----- Footer ------>
+
+    <footer>
+      Copyright ©2022 <a href="mailto:marian.vigneron@free.fr">- Marian Vigneron</a>
+    </footer>
+
+  </div>
+
+  <!----- Script ------>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

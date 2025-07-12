@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" lang="fr" content="Marian Vigneron">
+  <meta name="copyright" content="© Marian Vigneron 2022">
+  <meta name="Description" lang="fr" content="Un site informatif sur l'Ecosse">
+  <meta name="Keywords" lang="fr" content="Ecosse, loch ness, voyage, paysage">
+  <link rel="stylesheet" href="../style/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="../loader/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Lato&family:wght@600&family=Quattrocento&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+  <title>Galerie</title>
+</head>
+
+<body>
+  <div class="conteneur_global">
+    <!----- Loader ------>
+
+    <div class="loader">
+      <img src="../loader/loader.gif" alt="Loading...">
+    </div>
+
+    <!----- Navigation ------>
+
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" style="padding-top: 2px; padding-bottom: 0px;"><img src="../img/logo2.png"
+          height="40px"></a>
+      <a href="galerie.html" class="active">Galerie</a>
+      <div class="dropdown">
+        <button class="dropbtn">Tourisme
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="regions.html">Régions</a>
+          <a href="activites.html">Activités</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Description
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="faune_flore.html">La faune et la flore</a>
+          <a href="cuisine.html">Spécialités culinaires</a>
+          <a href="musique.html">La musique</a>
+        </div>
+      </div>
+      <a href="mythes.html">Mythes</a>
+      <a href="quizz.html">Quizz</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!----- Slideshow ----->
+
+    <div class="slideshow-container">
+
+      <!----- Full-width images with number and caption text ----->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="../sildeshow/paysage1.jpg" style="width:100%">
+        <div class="text">Les Highlands</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="../sildeshow/paysage2.jpg" style="width:100%">
+        <div class="text">Chateau en ruine</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="../sildeshow/paysage3.jpg" style="width:100%">
+        <div class="text">Les Highlands</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="../sildeshow/paysage4.jpg" style="width:100%">
+        <div class="text">Un Loch d'Ecosse</div>
+      </div>
+
+      <!----- Next and previous buttons ----->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!----- Dots/circles ----->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!----- Régions ------>
+
+    <div class="conteneur_flex">
+
+      <div class="flex bordure">
+        <a href="regions.html#loch_ness">Loch Ness</a>
+        <a href="regions.html#loch_ness"><img src="../sildeshow/loch_ness.jpg" style="margin-top:6px;" width="100%"
+            alt="Loch Ness">
+        </a>
+      </div>
+      <div class="flex bordure_milieu">
+        <a href="regions.html#highlands">Highlands</a>
+        <a href="regions.html#highlands"><img src="../sildeshow/highlands.jpg" style="margin-top:6px;" width="100%"
+            alt="Les Highlands"></a>
+      </div>
+      <div class="flex bordure">
+        <a href="regions.html#edimbourg">Edimbourg</a>
+        <a href="regions.html#edimbourg"><img src="../sildeshow/edimbourg.jpg" style="margin-top:6px;" width="100%"
+            alt="Edimbourg"></a>
+      </div>
+
+    </div>
+
+    <div class="texte_de_remplissage">
+      <h2> Ces destinations vous attendent, n'hesitez plus !</h2>
+    </div>
+
+    <!----- Footer ------>
+
+    <footer>
+      Copyright ©2022 <a href="mailto:marian.vigneron@free.fr">- Marian Vigneron</a>
+    </footer>
+
+  </div>
+
+  <!----- Script ------>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active_slide", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active_slide";
+    }
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

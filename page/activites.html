@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" lang="fr" content="Marian Vigneron">
+  <meta name="copyright" content="© Marian Vigneron 2022">
+  <meta name="Description" lang="fr" content="Un site informatif sur l'Ecosse">
+  <meta name="Keywords" lang="fr" content="Ecosse, loch ness, voyage, paysage">
+  <link rel="stylesheet" href="../style/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="../loader/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Lato&family:wght@600&family=Quattrocento&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+  <title>Activités</title>
+</head>
+
+<body>
+  <div class="conteneur_global">
+    <!----- Loader ------>
+
+    <div class="loader">
+      <img src="../loader/loader.gif" alt="Loading...">
+    </div>
+
+    <!----- Navigation ------>
+
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" style="padding-top: 2px; padding-bottom: 0px;"><img src="../img/logo2.png"
+          height="40px"></a>
+      <a href="galerie.html">Galerie</a>
+      <div class="dropdown active">
+        <button class="dropbtn">Tourisme
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="regions.html">Régions</a>
+          <a href="activites.html">Activités</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Description
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="faune_flore.html">La faune et la flore</a>
+          <a href="cuisine.html">Spécialités culinaires</a>
+          <a href="musique.html">La musique</a>
+        </div>
+      </div>
+      <a href="mythes.html">Mythes</a>
+      <a href="quizz.html">Quizz</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!----- Header ------>
+
+    <header>
+      <img src="../img/header_activite.jpg" width="100%" alt="de la course à pied">
+    </header>
+
+    <!----- Contenu ------>
+
+    <div class="texte_de_remplissage">
+      <h2> Des activités pour remplir votre séjour </h2>
+    </div>
+
+    <div class="conteneur_flex">
+
+      <div class="flex bordure">
+        <p> Visitez le Fort George et découvrez tous ses secrets. En une journée complète de visite animée par les
+          meilleurs guides d'Ecosse, votre soif de connaissance sera comblée.</p>
+        <img src="../img/fort_george.jpg" style="margin-top:6px;" width="100%" alt="Fort George">
+        <a href="https://www.tripadvisor.fr/Attraction_Review-g186543-d523427-Reviews-Fort_George-Inverness_Scottish_Highlands_Scotland.html"
+          target="_blank">
+          <button class="button" style="vertical-align:middle"><span>En savoir plus </span></button>
+        </a>
+      </div>
+
+      <div class="flex bordure_milieu">
+        <p>Au départ d'Edimbourg, partez pour une journée d'excursion à travers les Highlands, le Loch Ness, et enfin
+          Glen
+          Coe. Des paysages à couper le souffle à partir de 60€/personnes.</p>
+        <img src="../img/highlands.jpg" style="margin-top:6px;" width="100%" alt="Les Highlands">
+        <a href="https://www.getyourguide.fr/edimbourg-l44/edimbourg-visite-du-loch-ness-de-glencoe-et-des-highlands-ecossais-t385687/"
+          target="_blank">
+          <button class="button" style="vertical-align:middle"><span>En savoir plus </span></button>
+        </a>
+      </div>
+
+      <div class="flex bordure">
+        <p>Stade populaire du grand Celtic Glasgow — meilleur club d’Écosse — le Celtic Park est une arène de légende à
+          l’échelle du football mondial. Il ne tient qu'à vous de le visiter.</p>
+        <img src="../img/celtic_park.jpg" style="margin-top:6px;" width="100%" alt="Le Celtic Park">
+        <a href="https://www.stadiumtour.fr/stadia/celtic-park" target="_blank">
+          <button class="button" style="vertical-align:middle"><span>En savoir plus </span></button>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!----- Footer ------>
+
+    <footer>
+      Copyright ©2022 <a href="mailto:marian.vigneron@free.fr">- Marian Vigneron</a>
+    </footer>
+
+  </div>
+
+  <!----- Script ------>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
